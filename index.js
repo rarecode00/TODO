@@ -3,7 +3,7 @@ const express = require("express");
 // Path of current directory
 const path = require("path");
 // Port number on which my server is running
-const port = 8000;
+const port = process.env.port || 8000;
 //Require database
 const db = require('./config/mongoose')
 //Require Todo
